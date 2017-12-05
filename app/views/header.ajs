@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TODOs</title>
+        <%- Bloggify.assets.html() %>
+    </head>
+    <body class="hack dark">

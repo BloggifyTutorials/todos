@@ -1,0 +1,60 @@
+{
+  "name": "todos-app-bloggify",
+  "version": "1.0.0",
+  "description": "TODO app built with @Bloggify.",
+  "main": "bloggify.json",
+  "scripts": {
+    "start": "bloggify-prod-start",
+    "start:dev": "bloggify-dev-start"
+  },
+  "author": "Bloggify <support@bloggify.org> (https://bloggify.org)",
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "scripts/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js",
+    "bloggify.js",
+    "bloggify.json",
+    "bloggify/"
+  ],
+  "bugs": {
+    "url": "https://github.com/BloggifyTutorials/todos/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BloggifyTutorials/todos.git"
+  },
+  "homepage": "https://github.com/BloggifyTutorials/todos#readme",
+  "blah": {
+    "title": "TODOs",
+    "installation_command": {
+      "content": [
+        "# Clone this repository",
+        "git clone https://github.com/BloggifyTutorials/todos",
+        "",
+        "# Install the dependencies",
+        "cd todos && npm i",
+        "",
+        "# Start the app in dev mode",
+        "npm run start:dev"
+      ],
+      "language": "bash"
+    },
+    "h_img": "https://i.imgur.com/PtZka5m.png"
+  },
+  "dependencies": {
+    "bloggify": "0.0.0-alpha27",
+    "bloggify-mongoose": "^2.1.0",
+    "connect-mongo": "^2.0.0"
+  },
+  "dependencies": {
+    "bloggify-cli": "0.0.0-alpha27"
+  }
+}

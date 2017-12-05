@@ -1,0 +1,29 @@
+<% include(Bloggify.views.header) %>
+<div class="container">
+    <h1>TODOs App</h1>
+<div class="box">
+    <% include(Bloggify.views.add_todo_form) %>
+    <% if (items.length) { %>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td width="20">#</td>
+                    <td>Description</td>
+                    <td width="130">Solved</td>
+                    <td width="250">Actions</td>
+                </tr>
+            </thead>
+            <tbody>
+                <% items.forEach(function (item, index) { %>
+                    <% include(Bloggify.views.todo_item.item, { item: item, id: index + 1}) %>
+                <% }) %>
+            </tbody>
+        </table>
+    <% } else { %>
+        <div class="alert alert-info">
+            No TODOs yet. Create your first one.
+        </div>
+    <% } %>
+</div>
+</div>
+<% include(Bloggify.views.footer) %>

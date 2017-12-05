@@ -1,0 +1,16 @@
+<form method="post" action="<%= Bloggify.actions.url("todos.add") %>">
+    <% if (ctx.query.error) { %>
+    <div class="alert alert-error">
+        <%= ctx.query.error %>
+    </div>
+    <% } %>
+    <%- ctx.csrfInput %>
+    <fieldset class="form-group form-success">
+        <label for="phone">TODO Content:</label>
+        <input name="content" autofocus="autofocus" class="form-control" />
+        <button class="btn btn-default">
+            Add
+        </button>
+    </fieldset>
+</form>
+

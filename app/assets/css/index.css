@@ -1,0 +1,10 @@
+@import url("https://unpkg.com/hack@0.8.0/dist/hack.css");
+@import url("https://unpkg.com/hack@0.8.0/dist/dark.css");
+
+form {
+    display: inline-block;
+}
+
+input, button {
+    font-family: inherit !important;
+}
