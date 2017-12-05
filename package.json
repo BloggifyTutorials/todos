@@ -50,11 +50,6 @@
     "h_img": "https://i.imgur.com/PtZka5m.png"
   },
   "dependencies": {
-    "bloggify": "0.0.0-alpha27",
-    "bloggify-mongoose": "^2.1.0",
-    "connect-mongo": "^2.0.0"
-  },
-  "dependencies": {
     "bloggify-cli": "0.0.0-alpha27"
   }
 }
