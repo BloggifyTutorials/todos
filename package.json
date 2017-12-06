@@ -5,7 +5,8 @@
   "main": "bloggify.json",
   "scripts": {
     "start": "bloggify-prod-start",
-    "start:dev": "bloggify-dev-start"
+    "start:dev": "bloggify-dev-start",
+    "postinstall": "[ \"$NODE_ENV\" != production ] && obj2env -i -c 'The MongoDB URI' DB_URI=mongodb://localhost/todos"
   },
   "author": "Bloggify <support@bloggify.org> (https://bloggify.org)",
   "license": "MIT",
@@ -50,6 +51,10 @@
     "h_img": "https://i.imgur.com/PtZka5m.png"
   },
   "dependencies": {
-    "bloggify-cli": "0.0.0-alpha27"
+    "bloggify": "0.0.0-alpha27"
+  },
+  "devDependencies": {
+    "bloggify-cli": "0.0.0-alpha27",
+    "obj2env-cli": "^1.0.4"
   }
 }
